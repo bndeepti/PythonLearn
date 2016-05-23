@@ -1,0 +1,76 @@
+<html>
+   <body>
+      
+      <form name = "form" action = "{% url "myPythonWebsite.views.add" %}" 
+         method = "POST" >{% csrf_token %}
+         
+         <div style = "max-width:470px;">
+            <center> 
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "EmployeeName" name = "employeeName" />
+            </center>
+         </div>
+			
+         <br>
+         
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "EmployeeId" name = "employeeId" />
+            </center>
+         </div>
+			
+         <br>
+
+         <div style = "max-width:470px;">
+            <center> 
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "SharedEmployee1Name" name = "sharedEmployee1Name" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "SharedEmployee1Id" name = "sharedEmployee1Id" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center> 
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "SharedEmployee2Name" name = "sharedEmployee2Name" />
+            </center>
+         </div>
+
+         <br>
+
+         <div style = "max-width:470px;">
+            <center>
+               <input type = "text" style = "margin-left:20%;" 
+                  placeholder = "SharedEmployee2Id" name = "sharedEmployee2Id" />
+            </center>
+         </div>
+
+         <br>
+         
+         <div style = "max-width:470px;">
+            <center> 
+            
+               <button style = "border:0px; background-color:#4285F4; margin-top:8%;
+                  height:35px; width:80%;margin-left:19%;" type = "submit" 
+                  value = "Add" >
+                  <strong>Add</strong>
+               </button>
+               
+            </center>
+         </div>
+         
+      </form>
+      
+   </body>
+</html>
